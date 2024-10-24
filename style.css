@@ -1,0 +1,354 @@
+/* CSS tùy chỉnh cho header */
+.navbar {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    height: 5rem;
+    /* Tùy chỉnh kích thước logo */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF4081;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: 0.125rem solid #ddd;
+    border-radius: 1.25rem;
+    padding: 0.3125rem 0.9375rem;
+    width: 12.5rem;
+}
+
+.search-bar button {
+    border: none;
+    background-color: transparent;
+    margin-left: 0.3125rem;
+    font-size: 1rem;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    max-height: 35rem;
+    /* Giới hạn chiều cao của banner */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Giữ tỉ lệ hình ảnh mà không bị biến dạng */
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet-active {
+    color: #fff;
+    /* Màu trắng cho mũi tên điều hướng */
+}
+
+/* Bestsellers Styles */
+.bestsellers {
+    margin-bottom: 2rem;
+}
+
+.bestsellers h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.product-card {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease;
+    background-color: #f7f7f7;
+}
+
+.product-card:hover {
+    transform: translateY(-0.625rem);
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 12.5rem;
+    object-fit: cover;
+}
+
+.category-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #FF4081;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #f7f7f7;
+}
+
+.new-price {
+    font-weight: bold;
+    margin-left: 0.625rem;
+}
+
+/* New Products Styles */
+.new-products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.product-card-small {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card-small:hover {
+    transform: translateY(-0.3125rem);
+}
+
+.product-card-small img {
+    width: 5rem;
+    height: auto;
+    margin-right: 0.9375rem;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 0.95rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.new-price {
+    font-weight: bold;
+    margin-left: 0.625rem;
+}
+
+.new-products {
+    background-color: #f7f7f7;
+    /* Thay đổi màu nền */
+    padding: 2.5rem 0;
+}
+
+.new-products .product-card-small {
+    background-color: #fff;
+    /* Màu nền của từng card sản phẩm */
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.new-products h2 {
+    font-size: 2rem;
+    color: #333;
+    /* Màu chữ */
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.features-section {
+    padding: 3rem;
+    /* Khoảng cách padding */
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-container {
+    margin: 0 15rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+}
+
+.feature-item {
+    flex-basis: 30%;
+    /* Tỉ lệ chiếm dụng của mỗi mục */
+    max-width: 100%;
+    /* Tối đa bằng 100% để dễ dàng điều chỉnh */
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    /* Kích thước icon */
+    color: #007bff;
+    margin-bottom: 1.25rem;
+}
+
+.feature-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Cấu hình cho phần đa dạng dáng móng */
+.nail-shape-section {
+    text-align: center;
+    padding: 2rem;
+    margin: 0 25rem;
+}
+
+.nail-shape-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nail-shapes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.shape-item {
+    text-align: center;
+    flex-basis: 22%;
+    margin-bottom: 2rem;
+}
+
+.shape-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-bottom: 4px solid #000;
+}
+
+.shape-item p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.collection-section {
+    text-align: center;
+    padding: 2rem;
+    margin: 0 15rem;
+}
+
+.collection-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.collection-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.collection-item {
+    text-align: center;
+    flex-basis: 15%;
+    margin-bottom: 2rem;
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.collection-item p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+/* hover */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/* footer */
+.custom-footer {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.custom-footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+.custom-footer a:hover {
+    text-decoration: underline;
+}
+
+.custom-footer h5 {
+    margin-bottom: 1rem;
+}
+
+.custom-footer p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .custom-footer {
+        text-align: center;
+    }
+}

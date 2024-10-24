@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nailbox</title>
+
+    <!-- Bootstrap 5.3.2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- FontAwesome 6.5.2 CSS -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../Group5/img/logo.png" alt="Logo">
+            </a>
+
+            <!-- Các mục menu -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Mới nhất</a></li>
+                            <li><a class="dropdown-item" href="#">Bán chạy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hướng dẫn do móng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tin tức</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ô tìm kiếm -->
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://nailbox.vn/wp-content/uploads/2022/10/slide-1-1.png" alt="Banner Image 1"
+                    class="img-fluid banner-image">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://nailbox.vn/wp-content/uploads/2022/10/slide-2.png" alt="Banner Image 2"
+                    class="img-fluid banner-image">
+            </div>
+        </div>
+
+        <!-- Pagination và Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Bestsellers Section -->
+    <section class="bestsellers">
+        <div class="container">
+            <h2 class="text-center mb-5">BEST SELLER</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="card-img-top" alt="Sản phẩm 1">
+                        <div class="card-body">
+                            <p class="category-label">Tổng hợp</p>
+                            <h5 class="card-title">Bộ Móng Giả Mẫu 189 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">240.000 ₫</span>
+                                <span class="new-price text-danger">200.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="card-img-top" alt="Sản phẩm 2">
+                        <div class="card-body">
+                            <p class="category-label">Đính đá</p>
+                            <h5 class="card-title">Bộ Móng Giả Mẫu 189 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">240.000 ₫</span>
+                                <span class="new-price text-danger">200.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="card-img-top" alt="Sản phẩm 3">
+                        <div class="card-body">
+                            <p class="category-label">Đính đá</p>
+                            <h5 class="card-title">Bộ Móng Giả Mẫu 266 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">280.000 ₫</span>
+                                <span class="new-price text-danger">250.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="card-img-top" alt="Sản phẩm 4">
+                        <div class="card-body">
+                            <p class="category-label">Đính đá</p>
+                            <h5 class="card-title">Bộ Móng Giả Mẫu 277 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">270.000 ₫</span>
+                                <span class="new-price text-danger">240.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new-products">
+        <div class="container">
+            <h2 class="text-center mb-5">SẢN PHẨM MỚI</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card-small">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="img-fluid" alt="Sản phẩm mới 1">
+                        <div class="product-info">
+                            <h5 class="product-title">Bộ Móng Giả #167</h5>
+                            <p class="price">
+                                <span class="old-price">240.000 ₫</span>
+                                <span class="new-price text-danger">200.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card-small">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="img-fluid" alt="Sản phẩm mới 2">
+                        <div class="product-info">
+                            <h5 class="product-title">Bộ Móng Giả Mẫu 189 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">240.000 ₫</span>
+                                <span class="new-price text-danger">200.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card-small">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="img-fluid" alt="Sản phẩm mới 3">
+                        <div class="product-info">
+                            <h5 class="product-title">Bộ Móng Giả Mẫu 266 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">280.000 ₫</span>
+                                <span class="new-price text-danger">250.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card-small">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="img-fluid" alt="Sản phẩm mới 4">
+                        <div class="product-info">
+                            <h5 class="product-title">Bộ Móng Giả Mẫu 277 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">270.000 ₫</span>
+                                <span class="new-price text-danger">240.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card-small">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="img-fluid" alt="Sản phẩm mới 4">
+                        <div class="product-info">
+                            <h5 class="product-title">Bộ Móng Giả Mẫu 277 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">270.000 ₫</span>
+                                <span class="new-price text-danger">240.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="product-card-small">
+                        <img src="https://nailbox.vn/wp-content/uploads/2022/10/bo-mong-gia-167-300x300.webp"
+                            class="img-fluid" alt="Sản phẩm mới 4">
+                        <div class="product-info">
+                            <h5 class="product-title">Bộ Móng Giả Mẫu 277 | Hàng Handmade | Ship Toàn Quốc</h5>
+                            <p class="price">
+                                <span class="old-price">270.000 ₫</span>
+                                <span class="new-price text-danger">240.000 ₫</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature-item">
+                <i class="bi bi-hand-thumbs-up"></i>
+                <h3>Khả năng sử dụng</h3>
+                <p>Không muốn tốn nhiều thời gian làm nail tại các salon hay spa, hoặc đến gần chỉ muốn cắt nhẹ nhàng
+                    làm móng. Móng giả từ CocoNail chính là cứu tinh dành cho bạn!</p>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-clock"></i>
+                <h3>Tiết kiệm thời gian</h3>
+                <p>Bạn chỉ mất khoảng 10-15 phút để dán xong móng tay giả.</p>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-arrow-repeat"></i>
+                <h3>Tái sử dụng</h3>
+                <p>Bạn có thể gỡ móng giả và sử dụng lại nhờ tính tiện dụng và bảo quản dễ dàng.</p>
+            </div>
+        </div>
+
+        <!-- Phần đa dạng dáng móng -->
+        <div class="nail-shape-section">
+            <h2>Đa dạng dáng móng</h2>
+            <div class="nail-shapes">
+                <div class="shape-item">
+                    <img src="../Group5/img/image.png" alt="Móng Thang" class="hover-effect">
+                    <p>Móng Thang</p>
+                </div>
+                <div class="shape-item">
+                    <img src="../Group5/img/image.png" alt="Móng Nhọn" class="hover-effect">
+                    <p>Móng Nhọn</p>
+                </div>
+                <div class="shape-item">
+                    <img src="../Group5/img/image.png" alt="Móng Tròn" class="hover-effect">
+                    <p>Móng Tròn</p>
+                </div>
+                <div class="shape-item">
+                    <img src="../Group5/img/image.png" alt="Móng Vuông" class="hover-effect">
+                    <p>Móng Vuông</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần bộ sưu tập -->
+        <div class="collection-section">
+            <h2>Bộ sưu tập</h2>
+            <div class="collection-items">
+                <div class="collection-item">
+                    <img src="../Group5/img/image.png" alt="Móng Halloween" class="hover-effect">
+                    <p>Móng Halloween</p>
+                </div>
+                <div class="collection-item">
+                    <img src="../Group5/img/image.png" alt="Móng Noel" class="hover-effect">
+                    <p>Móng Noel</p>
+                </div>
+                <div class="collection-item">
+                    <img src="../Group5/img/image.png" alt="Móng Tết" class="hover-effect">
+                    <p>Móng Tết</p>
+                </div>
+                <div class="collection-item">
+                    <img src="../Group5/img/image.png" alt="Móng Valentine" class="hover-effect">
+                    <p>Móng Valentine</p>
+                </div>
+                <div class="collection-item">
+                    <img src="../Group5/img/image.png" alt="Móng Ngày Cưới" class="hover-effect">
+                    <p>Móng Ngày Cưới</p>
+                </div>
+                <div class="collection-item">
+                    <img src="../Group5/img/image.png" alt="Móng Lễ Hội" class="hover-effect">
+                    <p>Móng Lễ Hội</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="custom-footer">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Logo và Giới thiệu -->
+                <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                    <img src="../Group5/img/logo.png" alt="Logo" class="mb-3" style="max-width: 120px;">
+                    <p>
+                        PenoyNailBox.com là 1 website thương mại điện tử cung cấp những sản phẩm NailBox chất lượng
+                    </p>
+                </div>
+
+                <!-- Về chúng tôi & Chính sách -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold">VỀ CHÚNG TÔI</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Câu chuyện thương hiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                    <h5 class="fw-bold mt-4">CHÍNH SÁCH</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Chính sách và quy định chung</a></li>
+                        <li><a href="#">Chính sách giao hàng và thanh toán</a></li>
+                        <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+                        <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+
+                <!-- Liên hệ & Kết nối với chúng tôi -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">LIÊN HỆ</h5>
+                    <p>Địa chỉ: Thạch hòa, Thạch thất, Hà Nội.</p>
+                    <p>Hotline: 0123.456.789</p>
+                    <p>Email: PenoyNailBox@gmail.com</p>
+
+                    <h5 class="fw-bold mt-4">KẾT NỐI VỚI CHÚNG TÔI</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Fanpage</a></li>
+                        <li><a href="#">Shopee</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // Cho phép lặp lại slider
+            autoplay: {
+                delay: 3000, // Tự động chuyển sau 3 giây
+                disableOnInteraction: false, // Không dừng autoplay khi người dùng tương tác
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
