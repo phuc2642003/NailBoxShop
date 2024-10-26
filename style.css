@@ -1,8 +1,8 @@
 /* CSS tùy chỉnh cho header */
 .navbar {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0rem 1;
     background-color: #fff;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); */
 }
 
 .navbar-brand img {
@@ -351,4 +351,157 @@
     .custom-footer {
         text-align: center;
     }
+}
+
+/* list.html */
+
+.container-custom {
+    margin: 3rem 0;
+    max-width: 1400px; /* Giới hạn chiều rộng tổng thể */
+}
+
+body {
+    background-color: #ffffff; /* Nền trắng */
+}
+
+.sidebar {
+    background-color: #f8f9fa; /* Màu xám nhạt */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto; /* Căn giữa trên màn hình nhỏ */
+}
+
+.sidebar input[type="text"] {
+    border-radius: 30px;
+    padding-right: 40px;
+}
+
+.sidebar .form-control::placeholder {
+    font-style: italic;
+}
+
+.sidebar .search-icon {
+    position: absolute;
+    top: 50%; /* Căn giữa theo chiều dọc */
+    right: 15px;
+    transform: translateY(-50%); /* Dịch chuyển chính xác vào giữa */
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.sidebar h5 {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.sidebar .list-group-item {
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* Nền trắng */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Bỏ gạch dưới */
+}
+
+.sidebar .list-group-item:hover {
+    background-color: #e9ecef; /* Đổi màu khi hover */
+    cursor: pointer;
+}
+
+.badge {
+    background-color: #dee2e6;
+    color: #495057;
+    font-weight: 400;
+}
+
+.sidebar h6 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.breadcrumb-item a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: inherit; /* Màu giống văn bản */
+}
+
+.breadcrumb-item a:hover {
+    color: #0d6efd; /* Màu xanh khi hover */
+}
+.product-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    transition: box-shadow 0.3s, transform 0.3s;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px); /* Slight lift on hover */
+    cursor: pointer;
+}
+
+/* Style for discount badge */
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #b30000; /* Dark red */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Style for the image */
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styling for the text */
+.product-item h6 {
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.product-item p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.product-item p del {
+    color: #888; /* Gray for original price */
+    margin-right: 5px;
+}
+
+.product-item p .text-danger {
+    color: #d9534f; /* Red for discount price */
+    font-weight: bold;
+}
+
+.breadcrumb {
+    background: transparent;
+}
+
+.category-title {
+    margin: 1rem 0 3rem 0;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.product-grid {
+    row-gap: 30px;
 }
